@@ -17,3 +17,14 @@ variable "private_subnet_cidr_block" {
   type        = string
   description = "CIDR block for the private subnet"
 }
+
+variable "igw" {
+  type        = string
+  description = "Name tag for the igw"
+}
+
+variable "rtb" {
+  type        = string
+  description = "Name tag for the rtb"
+}
+
