@@ -27,7 +27,7 @@ resource "aws_security_group" "sg" {
 resource "aws_instance" "webserver" {
   ami           = var.ami
   instance_type = var.instance_type
-  key_name      = "MyKeyPair"
+  key_name      = "ram.pem"
 
   subnet_id                   = aws_subnet.public_subnet.id
   vpc_security_group_ids      = [aws_security_group.sg.id]
