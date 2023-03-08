@@ -28,3 +28,20 @@ variable "rtb" {
   description = "Name tag for the rtb"
 }
 
+
+variable "ec2" {
+  type        = string
+  description = "Name tag for the ec2"
+}
+
+variable "ami" {
+  type        = string
+  description = "Name tag for the ami"
+}
+
+variable "instance_type" {
+  type        = string
+  description = "Name tag for the instance_type"
+}
+
+
